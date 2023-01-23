@@ -1,7 +1,12 @@
 from azure.storage.blob import BlobServiceClient
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
+
+connection_string = os.environ.get('connection_string')
+container_name = os.environ.get('container_name')
+
 
 def uploadToBlobStorage(file_path,file_name):
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
