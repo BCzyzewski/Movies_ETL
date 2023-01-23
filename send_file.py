@@ -1,9 +1,7 @@
 from azure.storage.blob import BlobServiceClient
+from dotenv import load_dotenv
 
-storage_account_key = "SFb/2eipnq37jyk15oc8Lt2lzSX+6ySkZB2baa/R1DpGhbjEBqbZL+HG405Go+cziWMbPRcn1Qd3+AStj3PcwQ=="
-storage_account_name = "moviesfiles"
-connection_string = "DefaultEndpointsProtocol=https;AccountName=moviesfiles;AccountKey=SFb/2eipnq37jyk15oc8Lt2lzSX+6ySkZB2baa/R1DpGhbjEBqbZL+HG405Go+cziWMbPRcn1Qd3+AStj3PcwQ==;EndpointSuffix=core.windows.net"
-container_name = "movies-container"
+load_dotenv()
 
 def uploadToBlobStorage(file_path,file_name):
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
