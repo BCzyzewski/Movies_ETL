@@ -132,3 +132,4 @@ dmypy.json
 .dockerignore
 Dockerfile
 requirements.txt
+.vscode
