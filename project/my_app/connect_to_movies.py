@@ -1,9 +1,12 @@
 import requests
-import pandas as pd
-from my_app.create_list_of_movies import load_and_create
-from my_app.send_file import uploadToBlobStorage
 import os
 from dotenv import load_dotenv
+
+import pandas as pd
+
+from .create_list_of_movies import load_and_create
+from .send_file import uploadToBlobStorage
+
 
 load_dotenv()
 

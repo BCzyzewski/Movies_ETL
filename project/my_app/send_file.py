@@ -14,6 +14,3 @@ def uploadToBlobStorage(file_path,file_name):
     with open(file_path, 'rb') as data:
         blob_client.upload_blob(data, overwrite = True)
         print(f'Uploaded {file_name}.')
-
-# calling a function to perform upload
-uploadToBlobStorage('/home/user/Pobrane/ETL/project/data/result.csv', 'movies-data.csv')
