@@ -16,4 +16,4 @@ def uploadToBlobStorage(file_path,file_name):
         print(f'Uploaded {file_name}.')
 
 # calling a function to perform upload
-uploadToBlobStorage('/home/user/Pobrane/ETL/result.csv', 'movies-data.csv')
+uploadToBlobStorage('/home/user/Pobrane/ETL/data/result.csv', 'movies-data.csv')

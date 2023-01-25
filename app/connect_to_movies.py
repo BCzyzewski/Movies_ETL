@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 api_key = os.environ.get('API_KEY')
-output_file = '/home/user/Pobrane/ETL/result.csv'
+output_file = '/home/user/Pobrane/ETL/data/result.csv'
 
 
 class API:
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     Movies = API('http://www.omdbapi.com/')
 
-    files = create_all_df(Movies, '/home/user/Pobrane/ETL/movies.csv')
+    files = create_all_df(Movies, '/home/user/Pobrane/ETL/data/movies.csv')
 
     files.to_csv(output_file)
 
